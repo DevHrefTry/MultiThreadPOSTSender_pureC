@@ -18,7 +18,7 @@ void *send_requests(void *arg) {
     char *ip_address = "127.0.0.1"; // IP address to send the request to
     int port = 80; // Port to send the request to
     char *path = "/api"; // The path to the resource to request
-    char *data = ""; // The data to include in the request
+    char *data = "param1=value1&param2=value2"; // The data to include in the request
 
     int request_count = 0;
     while (MAX_REQUESTS == 0 || request_count < MAX_REQUESTS) {
